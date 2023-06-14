@@ -713,12 +713,87 @@ footer h6{
   z-index: -1;
 }
 
+/* About us */
+#page-header.about-header{
+  background-image: url("img/about/banner.png");
+}
+
+#about-head{
+  display: flex;
+  align-items: center;
+}
+
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+
+#about-head div{
+  padding-left: 40px;
+}
+
+#about-head h6{
+  font-size: small;
+  font-weight: 200;
+}
+
+#about-app{
+  text-align: center;
+}
+
+#about-app video{
+  width: 70%;
+  height: 100%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+/* Contact Page */
+#contact-details h6{
+  font-size: small;
+  font-weight: 200;
+}
+
+#contact-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details{
+  width: 40%;
+}
+
+#contact-details .details span{
+  font-size: 12px;
+}
+
+
+#contact-details .details h2{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#contact-details .details h3{
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li{
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+
 /* Start Media Query */
 
 @media(max-width:799px){
   .section-p1{
     padding: 40px 40px;
   }
+  
   #navbar{
     display: flex;
     flex-direction: column;
@@ -932,6 +1007,25 @@ footer h6{
   }
 
   #blog .blog-details{
+    width: 100%;
+  }
+
+  /* About Page */
+
+  #about-head{
+    flex-direction: column;
+  }
+
+  #about-head img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div{
+    padding-left: 0px;
+  }
+
+  #about-app video{
     width: 100%;
   }
 
